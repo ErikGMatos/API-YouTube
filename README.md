@@ -2,10 +2,11 @@
 
 ## **Erik Garces Matos** 
  _Quebrando linha_
-
+ 	```js
  	function sayHello() {
       return 'hi!';
     }
+    ```
 
  [Blog do Google](https://www.google.com.br)
 
