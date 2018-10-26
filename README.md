@@ -3,7 +3,7 @@
 ## **Erik Garces Matos** 
  _Quebrando linha_
  	```js
- 	function sayHello() {
+ 	function ssayHello() {
       return 'hi!';
     }
     ```
