@@ -3,7 +3,7 @@
 ## **Erik Garces Matos** 
  _Quebrando linha_
 
-```js
+```ruby
 require 'redcarpet'
 markdown = Redcarpet.new("Hello World!")
 puts markdown.to_html
