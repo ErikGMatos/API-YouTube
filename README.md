@@ -3,15 +3,16 @@
 ## **Erik Garces Matos** 
  _Quebrando linha_
 
-```ruby
+```js
 require 'redcarpet'
 markdown = Redcarpet.new("Hello World!")
 puts markdown.to_html
 ```
- 	function ssayHello() {
-      return 'hi!';
-    }
-    
+```js
+function ssayHello() {
+    return 'hi!';
+  }
+``` 
 
  [Blog do Google](https://www.google.com.br)
 
