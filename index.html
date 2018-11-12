@@ -5,9 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+
+        .pai{
+            position: relative;
+            background-color: #eee;
+            width: 300px;
+            height: 500px;
+        }
+        .div {
+            width: 100px;
+    height: 100px;
+    background-color: brown;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+        }
+       /* .div {
+        position: absolute;
+    width: 0;
+    height: 0;
+    border: 140px solid;
+    border-color: transparent transparent transparent green;
+    bottom: -140px;
+    right: -140px;
+    transform: rotate(45deg);
+        } */
+    </style>
 </head>
 <body>
+    <div class="pai">
+
+        <div class="div">
+            
+        </div>
+    </div>
+    <form action="">
+        <input type="file" class="arquivo">
+        <!-- <button class="btn">Ativa base64</button> -->
+        <div>
+            <h6>Imagem com base64 no SRC</h6>
+            <img class="foto" src="" alt="">
+        </div>
+    </form>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="./teste.js"></script>
+    <script>
+        
+var Acompanhamento = (function () {
+
+
+function init() {
+    $('.arquivo').change(function () {
+        debugger;
+       var file =  this.files[0];
+       var reader = new FileReader();
+
+        reader.onload = function (e) {
+            debugger
+            $('.foto').attr('src', e.target.result);
+        }
+
+        reader.readAsDataURL(file);
+
+    });
+}
+    
+return {
+    init: init,
+    banana: banana
+
+};
+
+})();
+
+$(Acompanhamento.init);
+
+    </script>
+    
 </body>
 </html>
