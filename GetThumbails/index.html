@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <style>
+        button{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+
+        .youtube {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="row"></div>
+<div class="">
+    <button class="botao btn youtube">Chama api YT</button>
+    <button class="botao btn vimeo">Chama api VIMEO</button>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script src="./Helper.js"></script>
+<script src="./GCS.js"></script>
+<script src="./APIVimeo.js"></script>
+<script src="./APIYouTubeV3.js"></script>
+</body>
+</html>
