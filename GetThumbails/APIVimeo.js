@@ -18,7 +18,7 @@ var APIYT = function () {
                 contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
                 url: url,
                 success: function (data) {
-                    //debugger;
+                    
                     console.log(data)
                     var html = '<img width="480" src="'+data.thumbnail_url+'">';
                     

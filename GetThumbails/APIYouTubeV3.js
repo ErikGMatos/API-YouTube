@@ -20,11 +20,12 @@ var APIYT = function () {
                     id: 'lKM-8CZRplI'
                 },
                 success: function (data) {
+                    
                     console.log(data.items)
                     var item = data.items;
                     var html = '';
                     for (var i = 0; i < item.length; i++) {
-                        html += `<img width="480" src="${item[i].snippet.thumbnails.medium.url}">`
+                        html += `<img width="480" src="${item[i].snippet.thumbnails.maxres.url}">`
                     }
                    
                     $('.row').html(html);
